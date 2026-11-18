@@ -1,0 +1,13 @@
+[package]
+name = "homoglyph_core"
+version = "0.1.0"
+edition = "2021"
+description = "Bağımlılıksız homoglyph / punycode / typosquatting alan adı tespit motoru"
+
+[features]
+default = []
+# Tauri arayüzüne JSON göndermek için
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }

@@ -1,0 +1,12 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Uyarı ve Hakkında pencereleri için izinler",
+  "windows": [
+    "alert",
+    "about"
+  ],
+  "permissions": [
+    "core:default"
+  ]
+}
