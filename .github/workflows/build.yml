@@ -69,6 +69,7 @@ jobs:
 
       - name: Derle ve paketle
         working-directory: src-tauri
+        shell: bash
         env:
           NO_STRIP: "true"
         run: tauri build --target ${{ matrix.target }} --bundles ${{ matrix.bundles }}
